@@ -1,0 +1,42 @@
+.auto{
+	width: 600px;
+	height: 200px;
+	background: grey;
+	transition-property: all; /*color, background, --- SIEMPRE "all" para que todo transicione como yo configuro*/
+	transition-duration: 1s; /*tiempo de transicion*/
+	transition-timing-function: linear; /* efecto de transicion*/
+	transition-delay: 0s; /*delay o tiempo de espera para iniciar*/
+}
+
+.auto:hover{
+	background-color: blue;
+}
+
+.auto:hover .rueda{
+	transform: rotate(1580deg);
+}
+
+.rueda{
+	width: 100px;
+	height: 100px;
+	background: linear-gradient(black,red,green);
+	border-radius: 50%;
+	position: absolute;
+	top: 150px;
+}
+
+.rueda1{
+	left:40px;
+	transition-property: all; /*color, background, --- all*/
+    transition-duration: 3s; /*tiempo de transicion*/
+    transition-timing-function: linear; / *efecto de transicion*/
+    transition-delay: 0; /*delay o tiempo de espera para iniciar*/
+}
+
+.rueda2{
+	left:450px;
+	transition-property: all; /*color, background, --- all*/
+    transition-duration: 3s; /*tiempo de transicion*/
+    transition-timing-function: linear; / *efecto de transicion*/
+    transition-delay: 0; /*delay o tiempo de espera para iniciar*/
+}
